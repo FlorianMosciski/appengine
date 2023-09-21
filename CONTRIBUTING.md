@@ -32,7 +32,7 @@ go test -v google.golang.org/appengine/...
 Before we can accept your pull requests you'll need to sign a Contributor
 License Agreement (CLA):
 
-- **If you are an individual writing original source code** and **you own the
+-   If you are an individual writing original source code** and **you own the
 intellectual property**, then you'll need to sign an [individual CLA][indvcla].
 - **If you work for a company that wants to allow you to contribute your work**,
 then you'll need to sign a [corporate CLA][corpcla].
@@ -86,3 +86,4 @@ available at [http://contributor-covenant.org/version/1/2/0/](http://contributor
 
 [indvcla]: https://developers.google.com/open-source/cla/individual
 [corpcla]: https://developers.google.com/open-source/cla/corporate
+ 
