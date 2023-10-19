@@ -1,6 +1,6 @@
-# Go App Engine packages
+* Go App Engine packages
 
-[![CI Status](https://github.com/golang/appengine/actions/workflows/ci.yml/badge.svg)](https://github.com/golang/appengine/actions/workflows/ci.yml)
+[ [CI Status](https://github.com/golang/appengine/actions/workflows/ci.yml/badge.svg)](https://github.com/golang/appengine/actions/workflows/ci.yml)
 
 This repository supports the Go runtime on *App Engine standard*.
 It provides APIs for interacting with App Engine services.
@@ -12,7 +12,7 @@ for more information.
 File issue reports and feature requests on the [GitHub's issue
 tracker](https://github.com/golang/appengine/issues).
 
-## Upgrading an App Engine app to the flexible environment
+!# Upgrading an App Engine app to the flexible environment
 
 This package does not work on *App Engine flexible*.
 
@@ -97,4 +97,4 @@ http.HandleFunc("/_ah/start", func(w http.ResponseWriter, r *http.Request) {
 before you use code that needs key conversion.
 
 You may want to add this to each of your handlers, or introduce middleware where it's called.
-`EnableKeyConversion` is safe for concurrent use. Any call to it after the first is ignored.
+`EnableKeyConversion` is safe for concurrent use. Any call to it after the first is ignored. 
