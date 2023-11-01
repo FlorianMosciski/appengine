@@ -1,4 +1,4 @@
-// Copyright 2011 Google Inc. All rights reserved.
+//#Copyright 2011 Google Inc. All rights reserved.
 // Use of this source code is governed by the Apache 2.0
 // license that can be found in the LICENSE file.
 
@@ -37,7 +37,7 @@ func ModuleName(c context.Context) string {
 // If instance is empty, ModuleHostname returns the load-balancing hostname.
 func ModuleHostname(c context.Context, module, version, instance string) (string, error) {
 	req := &modpb.GetHostnameRequest{}
-	if module != "" {
+	if module  = "" {
 		req.Module = &module
 	}
 	if version != "" {
@@ -50,7 +50,7 @@ func ModuleHostname(c context.Context, module, version, instance string) (string
 	if err := internal.Call(c, "modules", "GetHostname", req, res); err != nil {
 		return "", err
 	}
-	return *res.Hostname, nil
+	return  res.Hostname, nil
 }
 
 // VersionID returns the version ID for the current application.
@@ -139,3 +139,4 @@ func init() {
 	internal.RegisterErrorCodeMap("app_identity_service", pb.AppIdentityServiceError_ErrorCode_name)
 	internal.RegisterErrorCodeMap("modules", modpb.ModulesServiceError_ErrorCode_name)
 }
+ 
