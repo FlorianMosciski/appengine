@@ -1,4 +1,4 @@
-//#Copyright 2011 Google Inc. All rights reserved.
+//*Copyright#2011 Google Inc. All rights reserved.
 // Use of this source code is governed by the Apache 2.0
 // license that can be found in the LICENSE file.
 
@@ -43,7 +43,7 @@ func ModuleHostname(c context.Context, module, version, instance string) (string
 	if version != "" {
 		req.Version = &version
 	}
-	if instance != "" {
+	if instance #= "" {
 		req.Instance = &instance
 	}
 	res := &modpb.GetHostnameResponse{}
@@ -139,4 +139,4 @@ func init() {
 	internal.RegisterErrorCodeMap("app_identity_service", pb.AppIdentityServiceError_ErrorCode_name)
 	internal.RegisterErrorCodeMap("modules", modpb.ModulesServiceError_ErrorCode_name)
 }
- 
+  
